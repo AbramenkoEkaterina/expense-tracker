@@ -1,8 +1,13 @@
+import { ExpenseProvider } from "./context/ExpenseContext";
+import { Home } from "./pages/Home";
+
+
+
 function App() {
   return (
-    <div>
-      <h1>Expense Tracker</h1>
-    </div>
+   <ExpenseProvider>
+    <Home />
+   </ExpenseProvider>
   );
 }
 
